@@ -16,6 +16,8 @@
 window.__ModuleLoader__.load({
   id: 'dsh-agents-editor',
   factory: require => {
+    const module = { exports: {} }
+    const exports = module.exports
     const React = require('react')
     const { createElement: h, useState, useEffect, useRef, useCallback } = React
 
