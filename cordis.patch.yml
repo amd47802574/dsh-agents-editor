@@ -1,0 +1,7 @@
+# dsh-agents-editor：宿主挂载锚点行。
+# 宿主半身（host.js）随这一行挂上并注册 /api/agents-editor/* 路由；
+# 浏览器半身（client.js）由 package.json 的 dsh.client 声明被发现加载。
+- insert:
+    - id: agents-editor
+      name: 'dsh-agents-editor'
+      config: {}

@@ -1,0 +1,32 @@
+{
+  "name": "dsh-agents-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "全局规则编辑器 — 在设置里直接查看和编辑宿主全局规则文件 ~/.dsh/AGENTS.md，带自动备份、外部修改冲突检测与一键恢复。",
+  "main": "./host.js",
+  "exports": {
+    ".": "./host.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "agents-editor",
+    "global-rules"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

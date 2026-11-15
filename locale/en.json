@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Global rules editor",
+    "description": "View and edit the host-wide rules file ~/.dsh/AGENTS.md right from Settings: automatic backups, external-change conflict detection, backup preview and one-click restore."
+  }
+}
